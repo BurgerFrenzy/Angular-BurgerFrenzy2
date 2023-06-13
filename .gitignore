@@ -7,8 +7,8 @@
 /bazel-out
 
 # Node
-/node_modules
-!/node_modules/bootstrap/
+/node_modules/*
+!/node_modules/bootstrap/*
 npm-debug.log
 yarn-error.log
 
