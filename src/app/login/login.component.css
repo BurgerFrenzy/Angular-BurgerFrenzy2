@@ -1,0 +1,45 @@
+.left-column {
+    background-color: blue;
+    text-align: center;
+
+
+}
+
+.right-column {
+    margin-top: 130px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+
+.form {
+    width: 50%;
+    max-width: 500px;
+
+    padding: 20px;
+}
+
+.button-login {
+    width: 150px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h5 {
+    text-align: center;
+}
+
+label {
+    font: size 200px;
+    ;
+}
+
+.foto-logo {
+
+    margin-top: 40px;
+}
+
+.foot-login {
+    padding-top: 0px;
+}
