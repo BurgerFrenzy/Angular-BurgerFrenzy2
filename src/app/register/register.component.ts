@@ -28,6 +28,12 @@ export class RegisterComponent {
     console.log(this.fg.value.password1);
     alert("Bienvenido " + this.fg.value.email);
   }
-}
+  contrasena: boolean = false;
+  contrasena1: boolean = false;
 
+  MostrarContrasenaRegister() {
+    this.contrasena = !this.contrasena;
+    this.contrasena1 = !this.contrasena1;
+  }
+}
 

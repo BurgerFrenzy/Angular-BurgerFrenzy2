@@ -1,41 +1,64 @@
-<!-- Registrer-->
+<!-- Register-->
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-5 order-md-first">
-            <img src="https://i.postimg.cc/tCwrb6pB/hamburguesa-clasica.jpg" alt="logo" class="img-fluid mx-auto"
-                style="border-radius: 10%;">
+
+        <div class="col-md-5 order-md-first left-column">
+            <div class="foto-logo">
+
+                <img src="/assets/img/logo.png" alt="foto del logo " class="img-fluid">
+            </div>
+            <div class="foto-login">
+
+                <img src="/assets/img/register.png" alt="foto del login" class="img-fluid">
+            </div>
 
         </div>
-        <div class="col-md-5 order-md-last">
-            <h2>Regístrate en Burguer Frenzy!</h2><br>
-            <form [formGroup]="fg" (ngSubmit)="submit()" id="register">
-                <label for="nombre"></label>
-                <input type="text" formControlName="name" name="nombre" placeholder="Nombre" class="form-control"
-                    id="nombre">
-                <label for="apellidos"></label>
-                <input type="text" formControlName="surname" name="apellidos" placeholder="Apellidos"
-                    class="form-control" id="apellidos">
 
-                <label for="email"></label>
-                <input type="email" formControlName="email" name="email" placeholder="Tu email" class="form-control"
-                    id="email"> <br>
+        <div class="col-md-7 order-md-last right-column">
 
-                <input type="password" formControlName="password" name="password" placeholder="Contraseña" id="password"
-                    class="form-control">
+            <form class="form" action="../templates/index.html" id="login">
+                <h1>Regístrate</h1>
+                <h4>¡Es gratis!</h4>
                 <br>
-                <input type="password" formControlName="password1" name="repeated_password"
-                    placeholder="Repite tu contraseña" id="password1" class="form-control">
+                <button class="form-control">
+                    <img src="https://static.typingclub.com/m/website/authen/google.svg" class="img-fluid"
+                        style="width: 20px;">
+                    <span>Inicia sesión con Google</span>
+                </button>
+                <br>
+                <h5>O</h5>
+                <br>
+                <label for="first_name">¿Cómo te llamas?</label>
+                <br>
+                <input type="text" id="first_name" name="first_name" placeholder="Nombre" class="form-control">
+                <br>
+                <label for="email">¿Cuál es tu correo electrónico?</label>
+                <br>
+                <input type="email" name="email" placeholder="hola@ejemplo.com" class="form-control" id="email">
+                <br>
+                <label for="password">Introduce tu contraseña:</label>
+                <br>
+                <input [type]="contrasena ? 'text' : 'password'" name="password" placeholder="*************"
+                    class="form-control" id="password">
+                <br>
+                <label for="password1">Repite tu contraseña:</label>
+                <input [type]="contrasena1 ? 'text' : 'password' "name=" password1" id="password1"
+                    placeholder="*************" class="form-control">
+                <br>
+                <input type="checkbox" id="checkbox" (change)="MostrarContrasenaRegister()">
+                <label for="checkbox">Mostrar Contraseña</label>
+                <br>
 
-                <input type="checkbox" class="form-check-input" id="boton">
-                <label for="boton" class="form-check-label">Mostrar contraseña </label><br><br>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Acepto los términos y condiciones de uso</label>
+                <br><br>
 
-                <button type="submit" class="btn btn-dark form-control" onclick="return register()"
-                    [disabled]="fg.invalid">Crear
-                    Cuenta</button> <br><br>
+                <button type="submit" class="btn btn-dark  button-register">Enviar</button><br><br>
 
+                <p>(¿Ya eres miembro? Inicia sesión <a href="login.html">aquí</a>)</p><br><br>
             </form>
+
         </div>
     </div>
-
 </div>

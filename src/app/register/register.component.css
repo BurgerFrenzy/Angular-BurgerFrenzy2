@@ -1,0 +1,53 @@
+.left-column {
+    background-color: blue;
+    text-align: center;
+
+
+}
+
+.right-column {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+
+.form {
+    width: 50%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.button-register {
+    width: 150px;
+}
+
+
+h1 {
+    font-size: 40px;
+}
+
+h5 {
+    text-align: center;
+}
+
+label {
+    font: size 200px;
+    ;
+}
+
+.foto-logo {
+
+    margin-top: 40px;
+}
+
+.foot-login {
+    padding-top: 10px;
+}
+
+@media (max-width: 767px) {
+
+    .left-column,
+    .right-column {
+        text-align: center;
+    }
+}   
