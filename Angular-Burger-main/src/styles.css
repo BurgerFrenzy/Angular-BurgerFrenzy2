@@ -15,6 +15,8 @@ body {
   background: -webkit-linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 0, 255) 50%, rgb(2, 0, 36) 100%);
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 0, 255) 50%, rgb(2, 0, 36) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#020024",GradientType=1);
+  display:flex;
+  justify-content: center;
 }
 
 .homepage {
@@ -28,7 +30,7 @@ body {
 .logo-container {
   max-width: 80%;
   margin: 0 auto;
-}
+} 
 
 .logo {
   max-width: 100%;
@@ -47,22 +49,56 @@ body {
 .device {
   padding-top: 30px;
   padding-bottom: 30px;
+  font-weight: 700;
 }
 
 .options {
   display: flex;
   margin-right: 20%;
   margin-left: 20%;
-  justify-content: center;
+  justify-content: space-between;
+
+}
+
+@media screen and (max-width: 800px) {
+  .options {
+  display:flex;
+  flex-direction:column;
+  }
 }
 
 .dropdown-center {
   margin: 5px;
-  width: 50%;
 }
 
 .btn {
-  width: 400px;
+  width:300px;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border: none !important;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+@media screen and (max-width: 900px) {
+  .btn {
+  width:250px;
+  }
+}
+
+.submit {
+  color:white;
+  font-weight: 700;
+  margin-right: 40%;
+  margin-left: 40%;
+  margin-top: 40px;
+  padding:15px;
+  border:0px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.submit:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
