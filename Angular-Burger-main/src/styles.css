@@ -1,0 +1,68 @@
+* {
+  font-family: "Exo 2", sans-serif;
+  margin: 0;
+  /* font-size:20px; */
+}
+
+/* @media screen and (max-width: 768px) {
+    * {
+    font-size: 16px;
+    }
+} */
+body {
+  background: rgb(2, 0, 36);
+  background: -moz-linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 0, 255) 50%, rgb(2, 0, 36) 100%);
+  background: -webkit-linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 0, 255) 50%, rgb(2, 0, 36) 100%);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 0, 255) 50%, rgb(2, 0, 36) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#020024",GradientType=1);
+}
+
+.homepage {
+  /*background-color: #0000ff;*/
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.logo-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.text, .device {
+  font-size: 1em;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.device {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.options {
+  display: flex;
+  margin-right: 20%;
+  margin-left: 20%;
+  justify-content: center;
+}
+
+.dropdown-center {
+  margin: 5px;
+  width: 50%;
+}
+
+.btn {
+  width: 400px;
+}
+
+/*# sourceMappingURL=styles.css.map */
