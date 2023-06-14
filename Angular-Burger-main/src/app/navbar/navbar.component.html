@@ -1,0 +1,60 @@
+<head>
+    <!-- Estilos personalizados -->
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .nav-item:hover {
+            background-color: antiquewhite;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Encabezado -->
+            <div class="container-fluid p-0">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <!-- Burger Frenzy logo -->
+                        <a class="navbar-brand" href="home">
+                            <img src="/assets/img/BurgerFrenzy.webp" alt="Logo" height="50">
+                        </a>
+
+                        <!-- Navbar Menu-->
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link text-center active" aria-current="page" href="home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-center" href="home#productos">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-center" href="history">Sobre nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-center" href="location">Encuéntranos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-center" href="private">Private</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-center" (click)="logout()">logout</a>
+                                </li>
+                                <li class="nav-item justify-content-left">
+                                    <a class="nav-link text-center" href="login "> <button type="button"
+                                            class="btn btn-dark form-control"> Iniciar Sesion</button></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </div>
