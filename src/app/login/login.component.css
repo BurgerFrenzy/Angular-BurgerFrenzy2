@@ -1,8 +1,6 @@
 .left-column {
     background-color: blue;
     text-align: center;
-
-
 }
 
 .right-column {
@@ -14,7 +12,6 @@
 .form {
     width: 50%;
     max-width: 500px;
-
     padding: 20px;
 }
 
@@ -31,12 +28,10 @@ h5 {
 }
 
 label {
-    font: size 200px;
-    ;
+    font-size: 20px;
 }
 
 .foto-logo {
-
     margin-top: 40px;
 }
 

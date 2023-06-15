@@ -1,0 +1,23 @@
+.navbar-custom {
+    background-color: rgb(127, 246, 255);
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #fff;
+    background-color: #666;
+}
+
+.form-control {
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+.navbar-custom .nav-link {
+    color: #FF0000;
+    font-weight: bold;
+}

@@ -1,27 +1,19 @@
-<!-- Log in-->
-
 <div class="container-fluid">
     <div class="row">
-
         <div class="col-md-5 left-column">
             <div class="foto-logo">
-
-                <img src="/assets/img/logo.png" alt=" foto del logo" class="img-fluid">
+                <img src="/assets/img/logo.png" alt="foto del logo" class="img-fluid">
             </div>
             <div class="foto-login">
-
                 <img src="/assets/img/login.png" alt="foto del login" class="img-fluid">
             </div>
-
         </div>
 
         <div class="col-md-7 order-md-last right-column">
-
             <form class="form" action="../templates/index.html" id="login">
                 <h1>Inicia sesión</h1><br>
                 <button class="form-control">
-                    <img src="https://static.typingclub.com/m/website/authen/google.svg" class="img-fluid"
-                        style="width: 20px;">
+                    <img src="https://static.typingclub.com/m/website/authen/google.svg" class="img-fluid" style="width: 20px;">
                     <span>Inicia sesión con Google</span>
                 </button>
                 <br>
@@ -32,8 +24,7 @@
                 <input type="email" name="email" placeholder="hola@ejemplo.com" class="form-control" id="email">
                 <br>
                 <label for="contraseña2">Contraseña:</label>
-                <input [type]="mostrarContrasena ?'text':'password' " name="password" placeholder="Contraseña"
-                    class="form-control" id="contraseña">
+                <input [type]="mostrarContrasena ? 'text' : 'password'" name="password" placeholder="Contraseña" class="form-control" id="contraseña">
                 <br>
                 <input type="checkbox" id="checkbox" (change)="MostrarContrasenaLogin()">
                 <label for="checkbox">Mostrar Contraseña</label>
@@ -44,7 +35,6 @@
 
                 <p>(¿Todavía no tienes cuenta? Regístrate <a href="register.html">aquí</a>)</p><br><br>
             </form>
-
         </div>
     </div>
 </div>
