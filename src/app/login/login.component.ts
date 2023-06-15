@@ -36,4 +36,8 @@ export class LoginComponent implements OnInit {
       alert("Error en el login");
     }
   }
+  mostrarContrasena: boolean = false;
+  MostrarContrasenaLogin() {
+    this.mostrarContrasena = !this.mostrarContrasena;
+  }
 }

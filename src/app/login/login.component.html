@@ -1,34 +1,40 @@
-<!-- Log in-->
-
-<div class="container">
-
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-5 order-md-first">
-            <img src="https://i.postimg.cc/nhm3hLLp/hamburguesa-triple.jpg" alt="logo" class="img-fluid mx-auto"
-                style="border-radius: 10%;">
-
+        <div class="col-md-5 left-column">
+            <div class="foto-logo">
+                <img src="/assets/img/logo.png" alt="foto del logo" class="img-fluid">
+            </div>
+            <div class="foto-login">
+                <img src="/assets/img/login.png" alt="foto del login" class="img-fluid">
+            </div>
         </div>
-        <div class="col-md-6 order-md-last">
-            <h2>Iniciar Sesion en Burguer Frenzy</h2><br>
-            <form [formGroup]="fg" (ngSubmit)="submit()" id="login">
-                <label for="email"></label>
-                <input type="email" formControlName="email" name="email" placeholder="Tu email" class="form-control"
-                    id="email">
-                <label for="contraseña2"></label>
-                <input type="password" formControlName="password" name="password" placeholder="Contraseña"
-                    class="form-control" id="contraseña2">
-                <input type="checkbox" class="form-check-input" id="boton1">
-                <label for="boton1" class="form-check-label">Mostrar contraseña </label><br><br>
-                <button type="submit"  class="btn btn-dark form-control"
-                    [disabled]="fg.invalid">Iniciar
-                    Sesion</button> <br> <br>
-                <p>¿Todavía no tienes cuenta? <a style="color: black;" href="register">Regístrate</a></p><br><br>
+
+        <div class="col-md-7 order-md-last right-column">
+            <form class="form" action="../templates/index.html" id="login">
+                <h1>Inicia sesión</h1><br>
+                <button class="form-control">
+                    <img src="https://static.typingclub.com/m/website/authen/google.svg" class="img-fluid" style="width: 20px;">
+                    <span>Inicia sesión con Google</span>
+                </button>
+                <br>
+                <h5>O</h5>
+                <br>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" placeholder="hola@ejemplo.com" class="form-control" id="email">
+                <br>
+                <label for="contraseña2">Contraseña:</label>
+                <input [type]="mostrarContrasena ? 'text' : 'password'" name="password" placeholder="Contraseña" class="form-control" id="contraseña">
+                <br>
+                <input type="checkbox" id="checkbox" (change)="MostrarContrasenaLogin()">
+                <label for="checkbox">Mostrar Contraseña</label>
+                <a href="http://" target="_blank" rel="noopener noreferrer">¿Olvidaste tu contraseña?</a>
+                <br><br><br>
+
+                <button type="submit" class="btn btn-dark button-login">Enviar</button><br><br>
+
+                <p>(¿Todavía no tienes cuenta? Regístrate <a href="register.html">aquí</a>)</p><br><br>
             </form>
         </div>
     </div>
-
 </div>
-
-<script src="login.js"></script>
-
-<router-outlet></router-outlet>
