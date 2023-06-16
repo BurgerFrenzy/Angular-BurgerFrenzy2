@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
   constructor(private fb: FormBuilder, private auth: AuthService, private r: Router) { }
 
   fg: FormGroup;
@@ -40,4 +41,6 @@ export class LoginComponent implements OnInit {
   MostrarContrasenaLogin() {
     this.mostrarContrasena = !this.mostrarContrasena;
   }
+  mostrarNavbar: boolean = false;
+  mostrarFooter: boolean = false;
 }
