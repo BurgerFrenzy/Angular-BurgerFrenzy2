@@ -1,0 +1,32 @@
+footer {
+    padding: 40px 0;
+}
+
+.d-flex.justify-content-center {
+    margin-bottom: 20px;
+}
+
+.row.w-100.text-center {
+    margin-bottom: 20px;
+}
+
+.col-lg-3.col-md-6.col-sm-12.pt-3 {
+    margin-bottom: 20px;
+}
+
+h4.strong {
+    font-size: 1.25rem;
+}
+
+.text-warning {
+    color: #ffc107;
+}
+
+address.mt-3 {
+    font-style: normal;
+}
+
+h4.strong,
+p {
+    margin-bottom: 10px;
+}

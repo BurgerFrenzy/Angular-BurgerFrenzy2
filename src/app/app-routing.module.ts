@@ -9,7 +9,7 @@ import { PrivateComponent } from './private/private.component';
 import { GuardService } from './services/guard.service';
 
 const routes: Routes = [
-  { path: "home", component: HomeComponent },
+  { path: "", component: HomeComponent },
   { path: "login", component: LoginComponent },
   { path: "register", component: RegisterComponent },
   { path: "location", component: LocationComponent },

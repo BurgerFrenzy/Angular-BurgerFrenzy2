@@ -28,6 +28,8 @@ export class RegisterComponent {
     console.log(this.fg.value.password1);
     alert("Bienvenido " + this.fg.value.email);
   }
+  mostrarNavbar: boolean = false;
+  mostrarFooter: boolean = false;
 }
 
 
