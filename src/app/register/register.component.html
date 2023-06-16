@@ -9,29 +9,27 @@
         </div>
         <div class="col-md-5 order-md-last">
             <h2>Regístrate en Burguer Frenzy!</h2><br>
-            <form [formGroup]="fg" (ngSubmit)="submit()" id="register">
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" id="register">
                 <label for="nombre"></label>
-                <input type="text" formControlName="name" name="nombre" placeholder="Nombre" class="form-control"
+                <input type="text" formControlName="firstName" name="nombre" placeholder="Nombre" class="form-control"
                     id="nombre">
                 <label for="apellidos"></label>
-                <input type="text" formControlName="surname" name="apellidos" placeholder="Apellidos"
+                <input type="text" formControlName="lastName" name="apellidos" placeholder="Apellidos"
                     class="form-control" id="apellidos">
 
                 <label for="email"></label>
                 <input type="email" formControlName="email" name="email" placeholder="Tu email" class="form-control"
                     id="email"> <br>
 
-                <input type="password" formControlName="password" name="password" placeholder="Contraseña" id="password"
-                    class="form-control">
+                <input [type]=" mostrarContrasena ? 'text' : 'password'" formControlName="password" name="password"
+                    placeholder="Contraseña" id="password" class="form-control">
                 <br>
-                <input type="password" formControlName="password1" name="repeated_password"
-                    placeholder="Repite tu contraseña" id="password1" class="form-control">
 
-                <input type="checkbox" class="form-check-input" id="boton">
+
+                <input type="checkbox" class="form-check-input" id="boton" (change)="MostrarcontrasenaRegister()">
                 <label for="boton" class="form-check-label">Mostrar contraseña </label><br><br>
 
-                <button type="submit" class="btn btn-dark form-control" onclick="return register()"
-                    [disabled]="fg.invalid">Crear
+                <button type="submit" class="btn btn-dark form-control">Crear
                     Cuenta</button> <br><br>
 
             </form>

@@ -6,7 +6,7 @@ import { RegisterComponent } from './register/register.component';
 import { LocationComponent } from './location/location.component';
 import { HistoryComponent } from './history/history.component';
 import { PrivateComponent } from './private/private.component';
-import { GuardService } from './services/guard.service';
+
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: "register", component: RegisterComponent },
   { path: "location", component: LocationComponent },
   { path: "history", component: HistoryComponent },
-  { path: "private", component: PrivateComponent, canActivate: [GuardService]},
+  { path: "private", component: PrivateComponent},
 ];
 
 @NgModule({

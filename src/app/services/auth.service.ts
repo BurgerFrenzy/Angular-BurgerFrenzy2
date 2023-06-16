@@ -1,40 +1,24 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { CookieService } from 'ngx-cookie-service';
+import { catchError } from 'rxjs/operators';
+import { throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
+  private apiUrl = 'http://localhost:5000/api/users/addUser'; // URL de tu backend
 
-  constructor(private http: HttpClient, private cookie: CookieService) { }
+  constructor(private http: HttpClient) { }
 
-  token: string = "";
-
-  login(e: string, p: string): boolean {
-    const req = this.http.post<Token>('https://reqres.in/api/login', { email: e, password: p });
-    req.subscribe(
-      (res) => {
-        this.token = res.token;
-        this.cookie.set('token', this.token);
-      }
-    );
-
-    if (this.token == "")
-      return false;
-    return true;
-  }
-
-  public logout(): void {
-    this.token = "";
-    this.cookie.set('token', "");
-  }
-
-  public isAuthenticated() {
-    return (this.cookie.get('token') != "");
+  addUser(user: any) {
+    return this.http.post<any>(`${this.apiUrl}/addUser`, user)
+      .pipe(
+        catchError(error => {
+          // Maneja el error aquí si es necesario
+          return throwError(error);
+        })
+      );
   }
 }
 
-interface Token {
-  token: string;
-}
