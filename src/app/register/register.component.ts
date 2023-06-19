@@ -48,6 +48,8 @@ export class RegisterComponent {
   MostrarcontrasenaRegister() {
     this.mostrarContrasena = !this.mostrarContrasena;
   }
+  mostrarNavbar: boolean = false;
+  mostrarFooter: boolean = false;
 }
 
 

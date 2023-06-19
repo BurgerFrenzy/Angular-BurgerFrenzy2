@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./history.component.css']
 })
 export class HistoryComponent {
-
+  mostrarNavbar: boolean = true;
+  mostrarFooter: boolean = true;
 }

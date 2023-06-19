@@ -44,13 +44,15 @@ export class LoginComponent {
         }
       })
       .catch(error => console.error(error));
-      
+
     return true;
   }
 
   MostrarContrasenaLogin() {
     this.mostrarContrasena = !this.mostrarContrasena;
   }
+  mostrarNavbar: boolean = false;
+  mostrarFooter: boolean = false;
 }
 
 
