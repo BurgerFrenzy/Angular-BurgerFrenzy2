@@ -18,18 +18,14 @@ export class RegisterComponent {
       password: ['', Validators.required],
     });
   }
-
-  onSubmit() {
+  register() {
     if (this.registerForm.invalid) {
       alert('Por favor, complete todos los campos correctamente.');
       return false;
     }
-
     const formData = this.registerForm.value;
     const { firstName, lastName, email, password } = formData;
-
-
-    alert('Bienvenido a Burguer Frenzy ' + firstName + ' ' + lastName);
+    alert('Bienvenido a SimpleDigital ' + firstName + ' ' + lastName);
 
     fetch('http://localhost:8080/api/addUser', {
       method: 'POST',

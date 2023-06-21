@@ -23,21 +23,22 @@
                 <br>
 
                 <label for="email">Correo electrónico</label>
-                <input type="email" formControlName="email" placeholder="hola@ejemplo.com" class="form-control"
-                    id="email">
-                <br>
-                <label for="contraseña2">Contraseña:</label>
-                <input [type]="mostrarContrasena ? 'text' : 'password'" formControlName="password"
-                    placeholder="Contraseña" class="form-control" id="contraseña">
-                <br>
-                <input type="checkbox" id="checkbox" (change)="MostrarContrasenaLogin()">
-                <label for="checkbox">Mostrar Contraseña</label>
-                <a href="http://" target="_blank" rel="noopener noreferrer">¿Olvidaste tu contraseña?</a>
-                <br><br><br>
+                    <input type="email" formControlName="email" placeholder="hola@ejemplo.com" class="form-control"
+                        id="email">
+                    <br>
+                    <label for="contraseña2">Contraseña:</label>
+                    <input [type]="mostrarContrasena ? 'text' : 'password'" formControlName="password"
+                        placeholder="Contraseña" class="form-control" id="contraseña">
+                    <br>
+                    <input type="checkbox" id="checkbox" (change)="MostrarContrasenaLogin()">
+                    <label for="checkbox">Mostrar Contraseña</label>
+                    <br>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">¿Olvidaste tu contraseña?</a>
+                    <br><br><br>
 
-                <button type="submit" class="btn btn-dark button-login">Enviar</button><br><br>
+                    <button type="submit" class="btn btn-dark button-login">Enviar</button><br><br>
 
-                <p>(¿Todavía no tienes cuenta? Regístrate <a href="register">aquí</a>)</p><br><br>
+                    <p>(¿Todavía no tienes cuenta? Regístrate <a href="register">aquí</a>)</p><br><br>
             </form>
 
         </div>

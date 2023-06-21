@@ -24,9 +24,6 @@ export class LoginComponent {
     }
 
     const { email, password } = this.loginForm.value;
-
-    //alert('Iniciando sesión en Burguer Frenzy con ' + email);
-
     const formData = new FormData();
     formData.append('email', email);
     formData.append('password', password);
@@ -38,13 +35,11 @@ export class LoginComponent {
       .then(response => response.text())
       .then(result => {
         alert(result);
-        if (result === "Bienvenido de nuevo a Burguer Frenzy " + email + " !") {
-          // redirigir a otra página si el inicio de sesión fue exitoso
-          window.location.href = "/home";
+        if (result === "Bienvenido de nuevo a SimpleDigital" + email + " !") {
         }
+        window.location.href='/'
       })
       .catch(error => console.error(error));
-
     return true;
   }
 
